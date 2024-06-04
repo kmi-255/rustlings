@@ -6,7 +6,7 @@
 
 
 fn main() {
-    let x: i32 ; // Michaël : ajout du type de variable en integer32 pour permettre au compilateur de prendre le bon type de variable
+    let x: i32 = 10 ; // Michaël : ajout du type de variable en integer32 pour permettre au compilateur de prendre le bon type de variable et assignation d'une valeur 
     if x == 10 {
         println!("x is ten!");
     } else {
