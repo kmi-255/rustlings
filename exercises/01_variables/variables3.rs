@@ -3,9 +3,9 @@
 // Execute `rustlings hint variables3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
 
 fn main() {
-    let x: i32;
+    let x: i32 = 1337; // Michaël : assignation d'une valeur à x pour permettre son initialisation et donc la compilation de variable3.rs
     println!("Number {}", x);
 }
