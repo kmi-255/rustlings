@@ -13,10 +13,22 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(amount: i32) -> i32 { // La fonction attendue est celle de calculer le nombre de pommes
+    // La fonction attend un nombre entier faisant référence au nombre de pomme en entrée,
+    // Et retourne un nombre entier en sortie faisant référence au prix.
+    if (amount > 40) { // Si le nombre de pommes est supérieur à 40, alors
+        amount } // le prix de la pomme = 1 
+    else { // Sinon
+        (amount * 2) // Il suffit de multiplier par 2 le nombre de pommes pour obtenir le prix initial
+    }
+
+}
+
+
+
 
 // Don't modify this function!
 #[test]
