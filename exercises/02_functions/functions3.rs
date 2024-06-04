@@ -3,10 +3,10 @@
 // Execute `rustlings hint functions3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
 
 fn main() {
-    call_me();
+    call_me(89898); // Michaël : la fonction attend à ce qu'un argument soit donné. Un nombre entier non-signé est donné et qui rentre sur 32 bits.
 }
 
 fn call_me(num: u32) {
