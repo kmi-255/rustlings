@@ -3,10 +3,10 @@
 // Execute `rustlings hint variables2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
 
 fn main() {
-    let x;
+    let x: i32 ; // Michaël : ajout du type de variable en integer32 pour permettre au compilateur de prendre le bon type de variable
     if x == 10 {
         println!("x is ten!");
     } else {
