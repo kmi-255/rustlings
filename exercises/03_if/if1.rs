@@ -20,7 +20,7 @@ pub fn bigger(a: i32, b: i32) -> i32 {
     }
     else {
         println!("a and b are equal {} and {}", a ,b);
-        return (a,b);
+        return a;
     }
 }
 
