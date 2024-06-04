@@ -2,17 +2,18 @@
 //
 // Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+
 
 pub fn animal_habitat(animal: &str) -> &'static str {
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
-        2.0
+        2 // Michaël : Un float était initialement présent. Il faut y mettre un nombre entier car la fonction en attend un.
     } else if animal == "snake" {
         3
     } else {
-        "Unknown"
+        4 // Michaël : Une chaîne de caractère était initialement présente donnant lieu à une erreur de compilation
+        // Michaël : Pour assurer la validité des tests, il faut y mettre un nombre entier
     };
 
     // DO NOT CHANGE THIS STATEMENT BELOW
