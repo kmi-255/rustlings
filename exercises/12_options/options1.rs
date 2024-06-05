@@ -3,7 +3,7 @@
 // Execute `rustlings hint options1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
 
 use core::time;
 
@@ -15,12 +15,10 @@ fn maybe_icecream(time_of_day: u16) -> Option<u16> {
     // value of 0. The Option output should gracefully handle cases where
     // time_of_day > 23.
     // TODO: Complete the function body - remember to return an Option!
-    if time_of_day < 22 {
-        Some(5)
+    if time_of_day < 22 { Some(5) } else {
+        if time_of_day > 23 { None } else { Some(0)} 
     }
-    else if time_of_day > 22 {
-        Some(0)
-    }
+
 }
 
 #[cfg(test)]
