@@ -51,6 +51,8 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
             goals_scored: 0,
             goals_conceded: 0,
         });
+        (*t2).goals_conceded += team_1_score;
+        (*t2).goals_scored += team_2_score;
     }
     scores
 }
