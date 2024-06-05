@@ -8,7 +8,11 @@
 // No hints this time!
 
 
-
+/// ------------------------------[COMMENTAIRES]------------------------------
+/// Dans cet exercice, la fonction `string_slice` nécessite de destructurer
+/// "&str" pour y emprunter la valeur qu'elle contient. Tandis que la fonction
+/// `string` ne prend qu'une chaîne de caractère en argument.
+/// ---------------------------------------------------------------------------
 fn string_slice(arg: &str) {
     println!("{}", arg);
 }

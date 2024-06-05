@@ -6,7 +6,6 @@
 // Execute `rustlings hint primitive_types6` or use the `hint` watch subcommand
 // for a hint.
 
-
 /// ------------------------------[COMMENTAIRES]------------------------------
 /// Dans cet exercice, il est demandé d'accéder au deuxième élément figurant
 /// dans le tuple `numbers`. Pour ce faire, une variable `second` est déclarée
@@ -14,7 +13,6 @@
 /// L'index débute toujours à 0 donc pour accéder au deuxième élément du tuple,
 /// le nombre 1 est utilisé.
 /// ---------------------------------------------------------------------------
-
 #[test]
 fn indexing_tuple() {
     let numbers = (1, 2, 3);

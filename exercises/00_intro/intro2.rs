@@ -7,8 +7,8 @@
 
 /// ------------------------------[COMMENTAIRES]------------------------------
 /// printline n'est pas une macro valide dans Rust. 
-/// Il faut utiliser par example :
-/// println!() qui permet d'afficher un élément en sortie 
+/// Par example, il faudrait utiliser : println!()
+/// qui permet d'afficher un élément en sortie 
 /// (et un saut de ligne, qui est propre à println!())
 /// Dans cet exercice, la macro printline est à remplacer et j'ai opté pour
 /// println qui est une macro figurant dans la crate native std 

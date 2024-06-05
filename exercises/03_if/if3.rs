@@ -3,17 +3,26 @@
 // Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
 
 
-
+/// ------------------------------[COMMENTAIRES]--------------------------------
+/// Pour cet exercice, la fonction `animal_habitat` a nécéssité des changements:
+///     La première instruction `else if` de la variable `identifier` si vraie, 
+///     renvoit initialement un float. Alors que `habitat` attend un nombre
+///     entier (2). Il a été nécessaire de remplacer le float par un nombre entier.
+///     L'instruction `else` de cette même variable, si vraie, renvoit
+///     initialement une chaîne de caractère donnant lieu à une erreur de
+///     compilation. Il a été nécessaire de mettre un nombre entier (4).
+///  
+/// ---------------------------------------------------------------------------
 pub fn animal_habitat(animal: &str) -> &'static str {
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
-        2 // Michaël : Un float était initialement présent. Il faut y mettre un nombre entier car la fonction en attend un.
+        2 
     } else if animal == "snake" {
         3
     } else {
-        4 // Michaël : Une chaîne de caractère était initialement présente donnant lieu à une erreur de compilation
-        // Michaël : Pour assurer la validité des tests, il faut y mettre un nombre entier
+        4 
+        
     };
 
     // DO NOT CHANGE THIS STATEMENT BELOW

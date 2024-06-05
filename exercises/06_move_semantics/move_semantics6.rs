@@ -12,7 +12,6 @@
 /// au pointeur lié à la valeur que contient `data` pour qu'elle puisse
 /// être lue sans en prendre la propriété, mentoinné par l'esperluette `&`.
 /// ---------------------------------------------------------------------------
-
 fn main() {
     let data = "Rust is great!".to_string();
 

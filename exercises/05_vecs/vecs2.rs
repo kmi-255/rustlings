@@ -22,7 +22,6 @@
 /// le pointeur `*element` est utilisé pour multiplier par 2 la valeur associée
 /// du vecteur. Cette modification n'est pas refletée par l'abscence du "="
 /// ---------------------------------------------------------------------------
-
 fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
     for element in v.iter_mut() {
         // TODO: Fill this up so that each element in the Vec `v` is
