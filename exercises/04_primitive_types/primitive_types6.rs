@@ -7,6 +7,13 @@
 // for a hint.
 
 
+/// ------------------------------[COMMENTAIRES]------------------------------
+/// Dans cet exercice, il est demandé d'accéder au deuxième élément figurant
+/// dans le tuple `numbers`. Pour ce faire, une variable `second` est déclarée
+/// dans laquelle est appelé le tuple `numbers` suivi du nombre `1`
+/// L'index débute toujours à 0 donc pour accéder au deuxième élément du tuple,
+/// le nombre 1 est utilisé.
+/// ---------------------------------------------------------------------------
 
 #[test]
 fn indexing_tuple() {

@@ -4,6 +4,20 @@
 
 
 
+/// ------------------------------[COMMENTAIRES]------------------------------
+/// Dans cet exercice, il a fallu construire la fonction fn bigger() à l'aide
+/// d'instructions IF.
+/// 
+/// Ainsi, si a est plus petit que b alors la macro println!() affiche la
+/// valeur de b et renvoie b qui est le nombre entier attendu par la fonction.
+/// 
+/// Si a est plus grand que b, alors la macro println!() affichage la valeur
+/// de a et renvoie a qui est le nombre entier attendu par la fonction.
+/// 
+/// Enfin, si les deux instructions précédentes ne voient pas leur condition
+/// remplies, alors on détermine que a est égal à b et qu'il est logique de
+/// renvoyer une des deux valeurs car elles sont identiques.
+/// ---------------------------------------------------------------------------
 pub fn bigger(a: i32, b: i32) -> i32 {
     // Complete this function to return the bigger number!
     // If both numbers are equal, any of them can be returned.

@@ -9,8 +9,18 @@
 // hint.
 // 
 
+/// ------------------------------[COMMENTAIRES]------------------------------
+/// Dans cet exercice, il est nécessaire d'importer le module `time`.
+/// Puisque seulement les macros `SystemTime` et `UNIX_EPOCH` sont utilisées,
+/// uniquement celles-ci sont importées. 
+/// Le cas échéant, et si d'autres macros sont importées, un avertissement
+/// est levé par le compilateur indiquant que des macros importées ne sont pas
+/// utilisées. 
+/// La bonne pratique étant d'importer uniquement les modules et les macros
+/// qui sont utilisés.
+/// ---------------------------------------------------------------------------
 // TODO: Complete this use statement
-use std::time::{SystemTime,UNIX_EPOCH}; // Michaël : on importe le module std::time et on spécifie uniquement les fonctions que l'on va utiliser plutôt que de faire un "use std::time::*"
+use std::time::{SystemTime,UNIX_EPOCH}; 
 
 fn main() {
     match SystemTime::now().duration_since(UNIX_EPOCH) {

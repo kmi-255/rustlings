@@ -5,11 +5,20 @@
 
 
 
+/// ------------------------------[COMMENTAIRES]------------------------------
+/// Dans cet exercice, l'ajout de "{:?}" est utilisé dans la macro println!().
+/// Ce qui permet de déclencher l'utilisation de std::fmt::Debug, et ainsi
+/// forcer la sortie (output). Le cas échéant, la directive {...} ne permet pas
+/// toujours d'afficher la sortie (output).
+/// 
+/// Dans la fonction fn square(), l'argument passé est déjà un nombre entier.
+/// Il n'est donc pas utile d'explicitement retourner un nombre entier.
+/// ---------------------------------------------------------------------------
 fn main() {
     let answer = square(3);
-    println!("The square of 3 is {:?}", answer); // Michaël : ajout de "{:?} pour permettre le format-string"
+    println!("The square of 3 is {:?}", answer);
 }
 
-fn square(num: i32) { // Michaël : l'argument envoyé est déjà un nombre entier, il n'est donc pas utile d'explicitement retourner un nombre entier. Suppression de "-> i32"
+fn square(num: i32) { 
     num * num;
 }

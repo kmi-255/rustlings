@@ -7,7 +7,18 @@
 // Execute `rustlings hint structs3` or use the `hint` watch subcommand for a
 // hint.
 
-
+/// ------------------------------[COMMENTAIRES]------------------------------
+/// Dans cet exercice, la fonction `fn is_international` renvoie une valeur
+/// booléénne. Celle-ci permet de déterminer si Oui ou Non le "package" est
+/// à destination internationale. 
+/// L'ajout de la condition `self.sender_country != self.recipient_country`
+/// permet de déterminer si Oui ou Non, le pays du destinataire est identique
+/// à celui qui a envoyé le "package". 
+/// 
+/// Dans la fonction `get_fees` prend en argument &self qui permet de
+/// référencer la méthode et un nombre entier qui est le poids du "package".
+/// L'opération permet de calculer le tarif d'envoi.
+/// ---------------------------------------------------------------------------
 #[derive(Debug)]
 struct Package {
     sender_country: String,
@@ -30,13 +41,13 @@ impl Package {
         }
     }
 
-    fn is_international(&self) -> bool { // Michaël : une valeur booléénne retournée par cette fonction permet de déterminer si le "package" est à destination internationale. 
-        self.sender_country != self.recipient_country // Michaël : la condition ici permet de déterminer si le pays du destinataire est différent de celui qui envoi le package
+    fn is_international(&self) -> bool { 
+        self.sender_country != self.recipient_country 
     }
 
     fn get_fees(&self, cents_per_gram: u32) -> u32 {
         // Something goes here...
-        cents_per_gram * self.weight_in_grams // Michaël : cette opération permet de calculer le tarif basé sur le poids du package et du montant par gramme du package
+        cents_per_gram * self.weight_in_grams
     }
 }
 

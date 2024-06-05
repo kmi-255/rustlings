@@ -7,9 +7,19 @@
 
 
 
+/// ------------------------------[COMMENTAIRES]------------------------------
+/// Dans cet exercice, l'enum `Message` permet de crééer des types. 
+/// Ainsi, 4 types y sont déclarés pour classer les événements d'un message.
+/// `ChangeColor` est un tuple basé sur les couleurs RVB qui doivent comprendre
+/// une valeur entre 0 et 255. Le type unsigned sur 8 bit permet de stocker
+/// cette valeur.
+/// 
+/// Des commentaires explicatifs figurent au niveau de la fonction 
+/// `fn process`.
+/// ---------------------------------------------------------------------------
 enum Message {
     // TODO: implement the message variant types based on their usage below
-    Quit, // Michaël : cet enum permet de classer les événements d'un message, soit "Quit", "Echo", "Move", et ChangeColor qui est un tuple basé sur RVB
+    Quit, 
     Echo (String),
     Move (Point),
     ChangeColor (u8,u8,u8)
@@ -48,7 +58,7 @@ impl State {
         // TODO: create a match expression to process the different message variants
         // Remember: When passing a tuple as a function argument, you'll need extra parentheses:
         // fn function((t, u, p, l, e))
-        match message { // Michaël : une fonction qui prend le messsage comme argument et ne renvoi rien. 
+        match message {  
             Message::ChangeColor(r, g,b ) => self.color = (r,g,b), // Michaël : on s'assure que les couleurs soient bien représentées par r,g,b
             Message::Echo(s) => self.message = s, // Michaël : on s'assure que la chaine de caractère soit bien initiée par le type Echo
             Message::Move(x) => self.position = x, // Michaël : on s'assure que le curseur soit bien existant
